@@ -14,6 +14,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias tolexo='cd ~/code/tolexo'
+alias rapid='cd ~/code/services/src/github.com/tolexo/rapid'
+alias elevate='cd ~/code/elevate'
+alias bolt='cd ~/code/services/src/github.com/tolexo/bolt'
+alias zeus='cd ~/code/zeus'
 
 # refresh shell
 alias reload='source ~/.bash_profile'
