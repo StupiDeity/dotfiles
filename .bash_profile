@@ -1,10 +1,13 @@
 # Setup bash completion
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  source $(brew --prefix)/etc/bash_completion
+if [ -d "$(brew --prefix)/etc/bash_completion.d" ]; then
+  for f in $(find /usr/local/etc/bash_completion.d -type l -iname "*")
+  do
+    source $f
+  done
 fi
 
-source /usr/local/Cellar/git/2.13.3/etc/bash_completion.d/git-prompt.sh
+source /usr/local/bin/git-prompt.sh
 
 # grep with color
 alias grep='grep --color=auto'
